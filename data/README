@@ -1,0 +1,59 @@
+// Copyright (C) 2019, International Business Machines
+// Corporation.  All Rights Reserved.
+
+// This program is distributed under the terms of the
+// Eclipse Public License - v 2.0
+
+When using the enclosed datasets in a publication
+please reference the paper:
+Francisco Barahona and Joao Goncalves,
+Local search algorithms for binary matrix factorization,
+2019
+
+Random datasets
+
+Datasets used in Table 2 and Figure 2 of the paper: random_type1/*_f2_*.csv
+Datasets used in Table 3 and Figure 3 of the paper: random_type1/*_f5_*.csv
+Datasets used in Table 4 and Figure 4 of the paper: random_type2/*_ones30_*.csv
+Datasets used in Table 5 and Figure 5 of the paper: random_type2/*_ones50_*.csv
+
+Real World datasets (datasets used in Table 6 and Figure 6 of the paper)
+
+These datasets were downlowaded from online repositories.
+In all cases, the files downloaded had to be modified to
+fit the specifications of the input files used by our code.
+In addition, some of the data in some of the datasets was
+removed or adapted. Below, we include small descriptions of
+those modifications.
+
+The real world datasets are:
+
+Amazon Political Books (APB) obtained from http://moreno.ss.uci.edu/data.html
+
+CelebA (C) obtained from https://www.kaggle.com/jessicali9530/celeba-dataset/version/2
+In our experiments we used only the first 1000 rows of the dataset.
+
+Collaboration in Jazz (CiJ) obtained from http://moreno.ss.uci.edu/data.html
+
+Primary Tumor (PT) obtained from https://archive.ics.uci.edu/ml/datasets/primary+tumor
+In this dataset, all but four of the features are
+binary. Those that are not binary have several discrete options. They
+were converted to binary by adding 
+columns where each column is a binary variable indicating if that
+option is selected or not. 
+
+SPECT Heart (SH) obtained from https://archive.ics.uci.edu/ml/datasets/spect+heart
+
+Voting Records (VR) obtained from https://archive.ics.uci.edu/ml/datasets/congressional+voting+records
+Each row of this dataset represents a congressman and each
+column represents a bill that was put up for a vote.
+Each vote has
+three possible outcomes (yes, no, or unknown) and we transformed the
+data by replacing each column with two binary columns. If the vote is
+unknown, the two columns will have a zero. Otherwise, one column will
+have a one and the other will have either a one or a zero depending on
+whether the vote was yes or no, respectively.
+
+
+
+

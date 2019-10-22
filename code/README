@@ -1,0 +1,29 @@
+// Copyright (C) 2019, International Business Machines
+// Corporation.  All Rights Reserved.
+
+// This program is distributed under the terms of the
+// Eclipse Public License - v 2.0
+
+This work is described in the paper:
+Francisco Barahona and Joao Goncalves,
+Local search algorithms for binary matrix factorization
+2019
+
+
+To compile this code on linux type:
+cd driver
+make
+cd ../heur
+make
+cd ../nlp
+make
+
+To run this code on linux you have to copy the three executables (driver, driver_heur, driver_nlp) into
+the same directory. Then type: ./driver input_file_name.csv k a
+where
+k is a positive integer corresponding to the rank
+a is 1 if you want to run algorithm 3 using algorithm 1 to generate an initial solution or
+a is 2 if you want to run algorithm 3 using algorithm 2 to generate an initial solution
+
+For example:
+./driver ../data/random_type1/xRandom_n30_m30_k5_f2_v1.csv 5 1
